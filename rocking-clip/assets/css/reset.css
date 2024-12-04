@@ -128,3 +128,9 @@ a {
 	font-weight: 700;
 	color: #00c58e;
 }
+
+.subTitle {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--primary-color);
+}

@@ -1,17 +1,14 @@
 <template>
 	<div>
-		<AppHeader />
-		<NuxtPage />
+		<AppHeader></AppHeader>
+		<main class="layout">
+			<NuxtPage />
+		</main>
 	</div>
 </template>
 
-<script>
-import AppHeader from '~/components/AppHeader.vue';
-export default {
-	// created() {
-	// 	console.log(this.$route);
-	// },
-};
+<script setup>
+import AppHeader from '~/components/common/AppHeader.vue';
 </script>
 
 <style scoped></style>
