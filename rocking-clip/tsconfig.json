@@ -2,13 +2,25 @@
 	// https://nuxt.com/docs/guide/concepts/typescript
 	"extends": "./.nuxt/tsconfig.json",
 	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"strict": true,
 		"verbatimModuleSyntax": true,
 		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"types": ["vite/client", "@nuxt/types"],
+		"paths": {
+			"~/*": ["*"],
+			"@/*": ["*"]
+		}
 	},
 	"include": [
+		"nuxt-app.d.ts",
 		"**/*.ts", // 모든 TypeScript 파일 포함
 		"**/*.tsx", // 모든 TSX 파일 포함 (있다면)
-		"nuxt.config.ts" // nuxt.config.ts 포함
+		"nuxt.config.ts", // nuxt.config.ts 포함
+		"**/*.vue"
 	]
 }

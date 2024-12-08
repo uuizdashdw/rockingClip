@@ -11,6 +11,9 @@
 				<li>
 					<nuxt-link to="/users">유저목록</nuxt-link>
 				</li>
+				<li>
+					<nuxt-link to="/addclip">클립추가</nuxt-link>
+				</li>
 			</ul>
 		</nav>
 	</header>
@@ -39,5 +42,6 @@ nav {
 	height: 100%;
 	display: flex;
 	align-items: center;
+	padding: 0 30px;
 }
 </style>

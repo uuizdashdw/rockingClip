@@ -1,11 +1,12 @@
 :root {
 	--primary-color: #000;
 	--secondary-color: #eee;
+	--third-color: #e0e0e0;
 }
 
 @media (min-width: 1440px) {
 	.layout {
-		padding: 20px 0;
+		padding: 40px 30px;
 	}
 
 	.layout,

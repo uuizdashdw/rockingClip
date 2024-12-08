@@ -11,20 +11,29 @@
 		"postinstall": "nuxt prepare"
 	},
 	"dependencies": {
+		"@pinia/nuxt": "^0.9.0",
 		"axios": "^1.7.8",
 		"firebase": "^11.0.2",
+		"firebase-admin": "^13.0.1",
+		"hls.js": "^1.5.17",
 		"nuxt": "^3.14.1592",
-		"pinia": "^2.2.8",
+		"nuxt-security": "^2.1.5",
+		"pinia": "^2.3.0",
 		"vue": "latest",
 		"vue-router": "latest",
 		"vuex": "^4.0.2"
 	},
 	"devDependencies": {
+		"@nuxt/types": "^2.18.1",
+		"@vue/runtime-dom": "^3.5.13",
+		"@vue/tsconfig": "^0.7.0",
 		"eslint": "^9.15.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-prettier": "^5.2.1",
 		"eslint-plugin-vue": "^9.31.0",
 		"prettier": "^3.4.1",
+		"typescript": "^5.7.2",
+		"vite": "^6.0.3",
 		"vue-eslint-parser": "^9.4.3"
 	}
 }
