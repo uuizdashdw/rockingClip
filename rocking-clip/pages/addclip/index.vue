@@ -118,44 +118,11 @@ const addClip = async () => {
 			createdAt: new Date().toLocaleString(),
 		};
 
-		router.push('/clips');
+		await router.push('/clips');
 	} catch (err) {
 		console.error(err);
 		alert('클립 추가에 실패했습니다.');
 	}
-	// try {
-	// 	const response = await $fetch<{ id: string; message: string }>(
-	// 		'/api/addClipToFirestore',
-	// 		{
-	// 			method: 'POST',
-	// 			body: clipData.value,
-	// 		},
-	// 	);
-	// 	alert(response.message);
-
-	// 	const newClip = {
-	// 		...clipData.value,
-	// 		id: Number(response.id),
-	// 		createdAt: new Date().toLocaleString(),
-	// 	};
-
-	// 	clipStore.addClip(newClip);
-
-	// 	clipData.value = {
-	// 		id: 0,
-	// 		clipName: '',
-	// 		clipPath: '',
-	// 		description: '',
-	// 		favorite: false,
-	// 		favoriteLevel: '1',
-	// 		createdAt: new Date().toLocaleString(),
-	// 	};
-
-	// 	clips.value.push({ ...clipData.value });
-	// 	router.push('/clips');
-	// } catch (err) {
-	// 	console.error(err);
-	// }
 };
 
 // const addClip = async () => {
